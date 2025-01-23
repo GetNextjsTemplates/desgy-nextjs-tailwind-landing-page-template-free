@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  @apply py-32;
+}
+
+.slick-next {
+  right: -70px !important;
+}
+
+.slick-prev {
+  left: -70px !important;
+}
+
+.bg-joinus {
+  background-image: url("/images/joinus/horn.svg"),
+    url("/images/joinus/paint.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: 84% 100%, 12% 18%;
+}
