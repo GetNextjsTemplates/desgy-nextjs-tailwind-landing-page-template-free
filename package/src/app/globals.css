@@ -1,0 +1,95 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --container-screen-xl: 75rem;
+  --container-screen-2xl: 83.75rem;
+
+  --shadow-cause-shadow: 0px 4px 17px 0px #00000008;
+  --shadow-linckedin: 0px 19px 30px 0px #00000033;
+  --shadow-manage-shadow: 0px 4px 5px 1px #c1c1c159;
+  --shadow-testimonial: 0px 5px 10px 0px #5968760d;
+
+  --transition-duration-150: 150ms;
+
+  --spacing-25: 35.625rem;
+  --spacing-29: 28rem;
+  --spacing-45: 45rem;
+  --spacing-50: 50rem;
+  --spacing-51: 54.375rem;
+  --spacing-85: 21rem;
+  --spacing-94: 22.5rem;
+  --spacing-120: 120rem;
+  --spacing-6_25: 6.25rem;
+  --spacing-70\%: 70%;
+  --spacing-40\%: 40%;
+  --spacing-30\%: 30%;
+  --spacing-80\%: 80%;
+  --spacing-8_5: 8.5rem;
+  --spacing-3_75: 3.75rem;
+
+  --inset-5\%: 5%;
+  --inset-35\%: 35%;
+
+  --z-index-1: 1;
+  --z-index-2: 2;
+  --z-index-999: 999;
+
+  --color-primary: #0066ff;
+  --color-purple: #1e013a;
+  --color-grey: #f4f5f6;
+  --color-border: #dbdbdb;
+  --color-darkmode: #00224a;
+  --color-deep-slate: #02398a;
+
+  --text-80: 5rem;
+  --text-80--line-height: 1.4;
+
+  --blur-220: 220px;
+  --blur-400: 400px;
+
+  --background-image-faq-bg: url('/images/faq/swirl.png');
+}
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+section {
+  @apply py-32;
+}
+
+.slick-next {
+  right: -70px !important;
+}
+
+.slick-prev {
+  left: -70px !important;
+}
+
+.bg-joinus {
+  background-image: url('/images/joinus/horn.svg'),
+    url('/images/joinus/paint.svg');
+  background-repeat: no-repeat, no-repeat;
+  background-position: 84% 100%, 12% 18%;
+}

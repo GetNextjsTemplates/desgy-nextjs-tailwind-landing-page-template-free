@@ -1,0 +1,42 @@
+{
+  "name": "desgy_project",
+  "version": "2.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@headlessui/react": "^2.2.0",
+    "@iconify/icons-ion": "^1.2.10",
+    "@iconify/react": "^5.0.1",
+    "aos": "^2.3.4",
+    "axios": "^1.7.2",
+    "date-fns": "^3.4.0",
+    "framer-motion": "^11.11.9",
+    "gray-matter": "^4.0.3",
+    "next": "^15.2.4",
+    "next-auth": "^4.24.7",
+    "next-themes": "^0.3.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-hot-toast": "^2.4.1",
+    "react-slick": "^0.30.2",
+    "remark": "^15.0.1",
+    "remark-html": "^16.0.1",
+    "slick-carousel": "^1.8.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.2",
+    "@types/aos": "^3.0.7",
+    "@types/node": "^20",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.1",
+    "@types/react-slick": "^0.23.13",
+    "postcss": "^8",
+    "tailwindcss": "^4.1.2",
+    "typescript": "^5"
+  }
+}
