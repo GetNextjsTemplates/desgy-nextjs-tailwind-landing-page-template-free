@@ -22,7 +22,9 @@ This project is licensed under the MIT License - see the [LICENSE](https://getne
 
 ### Follow us for Web Design Updates
 
-[![dribbble](https://img.shields.io/badge/dribbble-logo?style=for-the-badge&logo=dribbble&logoColor=white&color=%23ea64d9)](https://www.dribbble.com/wrappixel)  [![behance](https://img.shields.io/badge/behance-logo?style=for-the-badge&logo=behance&logoColor=white&color=%230057ff)](https://www.behance.net/GetNextjsTemplates/)
+[![dribbble](https://img.shields.io/badge/dribbble-logo?style=for-the-badge&logo=dribbble&logoColor=white&color=%23ea64d9)](https://dribbble.com/wrappixel)(https://teams.live.com/l/message/19:uni01_bk26ggw5va4z5fipxuk33mqhzuqaweozhlnrr7ondt7dbcrffdla@thread.v2/1747401868350?context=%7B%22contextType%22%3A%22chat%22%7D)
+
+  [![behance](https://img.shields.io/badge/behance-logo?style=for-the-badge&logo=behance&logoColor=white&color=%230057ff)](https://www.behance.net/GetNextjsTemplates/)
 
 
 #### Spread the Word 📢
@@ -30,4 +32,3 @@ This project is licensed under the MIT License - see the [LICENSE](https://getne
 If you find this template helpful, give it a ⭐️ and share it with your fellow developers. 
 
 Happy coding! 💻
-
