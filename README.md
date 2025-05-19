@@ -63,4 +63,6 @@ If you find this template helpful, give it a ⭐️ and share it with your fello
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/GetNextjsTemplates/desgy-nextjs-tailwind-landing-page-template-free&project-name=design-agency&repository-name=desgy-nextjs-tailwind-landing-page-template-free)
 
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/GetNextjsTemplates/desgy-nextjs-tailwind-landing-page-template-free)
+
 Happy coding! 💻
