@@ -61,8 +61,6 @@ This project is licensed under the MIT License - see the [LICENSE](https://getne
 
 If you find this template helpful, give it a ⭐️ and share it with your fellow developers. 
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/GetNextjsTemplates/desgy-nextjs-tailwind-landing-page-template-free/package/&project-name=design-agency&repository-name=desgy-nextjs-tailwind-landing-page-template-free)
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/GetNextjsTemplates/desgy-nextjs-tailwind-landing-page-template-free/package/)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/GetNextjsTemplates/desgy-nextjs-tailwind-landing-page-template-free&root-directory=package)
 
 Happy coding! 💻
