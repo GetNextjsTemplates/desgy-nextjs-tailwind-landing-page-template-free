@@ -2,7 +2,7 @@
 [View Live Preview](https://desgy-tailwind-nextjs-free.vercel.app/) | [Download](https://getnextjstemplates.com/products/desgy-nextjs-free-landing-page-template) | [More Nextjs Templates](https://getnextjstemplates.com/)
 
 
-<a target="_blank" href="DESGY URL">
+<a target="_blank" href="https://getnextjstemplates.com/products/desgy-nextjs-free-landing-page-template">
   <img src="https://www.wrappixel.com/wp-content/uploads/edd/2025/04/desgy-free-nextjs-landing-page-for-business-portfolio.jpg" />
 </a>
 
