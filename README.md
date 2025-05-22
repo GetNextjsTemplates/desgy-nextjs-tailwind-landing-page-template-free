@@ -1,5 +1,5 @@
 ## Desgy Nextjs Landing Page Template
-[View Live Preview](https://desgy-tailwind-nextjs-free.vercel.app/) |📥[Download Desgy Template](https://getnextjstemplates.com/products/desgy-nextjs-free-landing-page-template) | 👉 [Discover Next.js Templates](https://getnextjstemplates.com/)
+🌏[View Live Preview](https://desgy-tailwind-nextjs-free.vercel.app/) |📥[Download Desgy Template](https://getnextjstemplates.com/products/desgy-nextjs-free-landing-page-template) | 👉 [Discover Next.js Templates](https://getnextjstemplates.com/)
 
 
 <a target="_blank" href="https://getnextjstemplates.com/products/desgy-nextjs-free-landing-page-template">
