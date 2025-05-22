@@ -1,10 +1,10 @@
 ## Desgy Nextjs Landing Page Template
-🌏[View Live Preview](https://desgy-tailwind-nextjs-free.vercel.app/) |📥[Download Desgy Template](https://getnextjstemplates.com/products/desgy-nextjs-free-landing-page-template) | 👉 [Discover Next.js Templates](https://getnextjstemplates.com/)
-
 
 <a target="_blank" href="https://getnextjstemplates.com/products/desgy-nextjs-free-landing-page-template">
   <img src="https://www.wrappixel.com/wp-content/uploads/edd/2025/04/desgy-free-nextjs-landing-page-for-business-portfolio.jpg" />
 </a>
+
+🌏[View Live Preview](https://desgy-tailwind-nextjs-free.vercel.app/) |📥[Download Desgy Template](https://getnextjstemplates.com/products/desgy-nextjs-free-landing-page-template) | 👉 [Discover Next.js Templates](https://getnextjstemplates.com/)
 
 <p style="text-align:center;">Skip building a web pages from scratch with Desgy, an easy-to-use NextJs Free landing page template with ready-to-use components. Built with React, Tailwind & Headless UI for flexible, developer-friendly website development. Stylish and eye-catching NextJs Template with some additional features. Desgy NextJs Template has a modern aesthetic. It gives your upcoming project a well-polished appearance. It has all the components required to build a fantastic homepage.
 </p>
