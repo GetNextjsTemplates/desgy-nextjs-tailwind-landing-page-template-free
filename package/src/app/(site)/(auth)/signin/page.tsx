@@ -1,20 +1,19 @@
-import Signin from "@/components/Auth/SignIn";
-import Breadcrumb from "@/components/Common/Breadcrumb";
-import { Metadata } from "next";
+import Signin from '@/app/components/Auth/SignIn'
+import Breadcrumb from '@/app/components/Common/Breadcrumb'
+import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title:
-    "Sign In | Property",
-};
+  title: 'Sign In | Property',
+}
 
 const SigninPage = () => {
   return (
     <>
-      <Breadcrumb pageName="Sign In Page" />
+      <Breadcrumb pageName='Sign In Page' />
 
       <Signin />
     </>
-  );
-};
+  )
+}
 
-export default SigninPage;
+export default SigninPage

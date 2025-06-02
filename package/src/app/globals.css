@@ -76,20 +76,12 @@ html {
 }
 
 section {
-  @apply py-32;
-}
-
-.slick-next {
-  right: -70px !important;
-}
-
-.slick-prev {
-  left: -70px !important;
+  @apply py-16;
 }
 
 .bg-joinus {
   background-image: url('/images/joinus/horn.svg'),
     url('/images/joinus/paint.svg');
   background-repeat: no-repeat, no-repeat;
-  background-position: 84% 100%, 12% 18%;
+  background-position: 90% 100%, 2% 18%;
 }
