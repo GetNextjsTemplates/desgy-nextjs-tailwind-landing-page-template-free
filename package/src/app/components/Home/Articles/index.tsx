@@ -22,7 +22,6 @@ const settings = {
         slidesToShow: 2,
         slidesToScroll: 1,
         infinite: true,
-        dots: false,
       },
     },
     {
@@ -31,7 +30,6 @@ const settings = {
         slidesToShow: 1,
         slidesToScroll: 1,
         infinite: true,
-        dots: false,
       },
     },
   ],
@@ -62,12 +60,12 @@ const Articles = () => {
 
   return (
     <section id='Blog' className='relative bg-grey overflow-hidden'>
-      <div className='container mx-auto max-w-(--breakpoint-xl) px-4 relative'>
+      <div className='container mx-auto max-w-7xl px-4 relative'>
         <div className='text-center'>
-          <h3 className='text-blue text-22 font-normal tracking-widest'>
+          <p className='text-primary text-xl font-normal tracking-widest'>
             ARTICLES
-          </h3>
-          <h3 className='text-65 sm:text-6xl font-bold'>Our latest post.</h3>
+          </p>
+          <h2>Our latest post.</h2>
         </div>
 
         <Slider {...settings}>
@@ -77,30 +75,26 @@ const Articles = () => {
               ))
             : articles.map((items, i) => (
                 <div key={i}>
-                  <div className='bg-white m-3 px-3 pt-3 pb-12 my-10 shadow-lg rounded-3xl relative'>
+                  <div className='bg-white m-3 px-3 pt-3 pb-12 my-10 shadow-lg rounded-4xl relative'>
                     <Image
                       src={items.imgSrc}
                       alt='gaby'
                       width={389}
                       height={262}
-                      className='inline-block m-auto'
+                      className='inline-block m-auto rounded-3xl'
                     />
                     <Link
                       href='/'
-                      className='absolute bg-primary text-white hover:bg-black hover:shadow-xl py-3 px-6 rounded-full top-56 right-11  '>
+                      className='absolute text-base bg-primary text-white hover:bg-black hover:shadow-xl py-3 px-6 rounded-full top-56 right-11'>
                       {items.time} read
                     </Link>
-                    <h4 className='text-2xl font-bold pt-6 text-black dark:text-white'>
-                      {items.heading}
-                    </h4>
-                    <h4 className='text-2xl font-bold pt-1 text-black dark:text-white'>
-                      {items.heading2}
-                    </h4>
+                    <h5 className='font-bold pt-6'>{items.heading}</h5>
+                    <h5 className='font-bold pt-1'>{items.heading2}</h5>
                     <div>
-                      <h3 className='text-16 font-normal pt-6 pb-2 text-black/75 dark:text-white/75'>
+                      <h3 className='text-sm font-normal pt-6 pb-2 text-black/75 dark:text-white/75'>
                         {items.name}
                       </h3>
-                      <h3 className='text-16 font-normal pb-1 text-black/75 dark:text-white/75'>
+                      <h3 className='text-sm font-normal pb-1 text-black/75 dark:text-white/75'>
                         {items.date}
                       </h3>
                     </div>

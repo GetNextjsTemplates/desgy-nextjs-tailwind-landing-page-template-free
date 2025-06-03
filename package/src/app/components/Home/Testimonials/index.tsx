@@ -19,7 +19,7 @@ interface TestimonialCardProps {
 }
 
 const settings = {
-  dots: false,
+  dots: true,
   infinite: true,
   slidesToShow: 3,
   slidesToScroll: 2,
@@ -44,7 +44,6 @@ const settings = {
         slidesToShow: 2,
         slidesToScroll: 1,
         infinite: true,
-        dots: false,
       },
     },
     {
@@ -53,7 +52,6 @@ const settings = {
         slidesToShow: 1,
         slidesToScroll: 1,
         infinite: true,
-        dots: false,
       },
     },
   ],
@@ -63,7 +61,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ items }) => {
   const validRating = Math.min(Math.max(items.rating, 0), 5)
 
   return (
-    <div className='relative py-10 mb-40'>
+    <div className='relative py-10'>
       <div className='bg-white dark:bg-darkHeroBg shadow-testimonial m-3 p-10 rounded-3xl'>
         <Image
           src={items.imgSrc}
@@ -72,18 +70,16 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ items }) => {
           height={71}
           className='inline-block m-auto absolute top-3'
         />
-        <h4 className='text-16 font-medium text-testColor my-4 text-black dark:text-white'>
-          {items.comment}
-        </h4>
+        <p className='text-base font-medium my-4 text-black'>{items.comment}</p>
         <hr style={{ color: 'border' }} />
         <div className='flex justify-between'>
           <div>
-            <h3 className='text-16 font-medium pt-4 pb-2 text-black dark:text-white'>
+            <p className='text-base font-medium pt-4 pb-2 text-black dark:text-white'>
               {items.name}
-            </h3>
-            <h3 className='text-xs font-medium pb-2 text-black/50 dark:text-white/50'>
+            </p>
+            <p className='text-xs font-medium pb-2 text-black/50'>
               {items.profession}
-            </h3>
+            </p>
           </div>
           <div className='flex mt-5'>
             {Array.from({ length: 5 }, (_, i) => (
@@ -128,18 +124,10 @@ const Testimonial: React.FC = () => {
     <section
       className="bg-testimonial dark:bg-darkmode bg-cover bg-center overflow-hidden before:absolute before:w-full before:h-full before:bg-[url('/images/wework/elipse.svg')] before:bg-no-repeat before:bg-center"
       id='testimonial-section'>
-      <div className='container mx-auto max-w-(--breakpoint-xl) px-4'>
+      <div className='container mx-auto max-w-7xl px-4'>
         <div className=''>
           <div className='text-center'>
-            <h3 className='text-4xl sm:text-6xl font-bold text-black dark:text-white my-3'>
-              See what others are saying.
-            </h3>
-            <h3 className='text-4xl sm:text-6xl font-bold text-black/50 dark:text-white/50 lg:mr-48 my-4'>
-              See what others are saying.
-            </h3>
-            <h3 className='text-4xl sm:text-6xl font-bold text-black/25 dark:text-white/25 lg:-mr-32 my-4'>
-              See what others are saying.
-            </h3>
+            <h2 className='my-3'>See what others are saying.</h2>
           </div>
           <div className='mt-20'>
             <Slider {...settings}>

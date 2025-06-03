@@ -1,11 +1,10 @@
-import { Urbanist } from 'next/font/google'
+import { Manrope } from 'next/font/google'
 import './globals.css'
 import Header from '@/app/components/Layout/Header'
 import Footer from '@/app/components/Layout/Footer'
-// import { ThemeProvider } from 'next-themes'
 import ScrollToTop from '@/app/components/ScrollToTop'
 import Aoscompo from '@/utils/aos'
-const font = Urbanist({ subsets: ['latin'] })
+const font = Manrope({ subsets: ['latin'] })
 
 export default function RootLayout({
   children,

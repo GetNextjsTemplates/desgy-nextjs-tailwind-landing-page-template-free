@@ -29,8 +29,8 @@ const Aboutus = () => {
 
   return (
     <section id='About' className=' bg-cover bg-center overflow-hidden'>
-      <div className='container mx-auto max-w-(--breakpoint-xl) px-4 relative z-1'>
-        <div className='lg:p-12 px-2 py-2 bg-grey rounded-3xl'>
+      <div className='container mx-auto max-w-7xl px-4 relative z-1'>
+        <div className='p-12 bg-grey rounded-3xl'>
           <Image
             src='/images/aboutus/dots.svg'
             width={100}
@@ -38,13 +38,11 @@ const Aboutus = () => {
             alt='dots-image'
             className='absolute bottom-1 -left-20'
           />
-          <p className='text-center text-primary text-18 tracking-widest uppercase mt-10'>
+          <p className='text-center text-primary text-lg tracking-widest uppercase mt-10'>
             about us
           </p>
-          <h4 className='text-center text-4xl lg:text-65 font-bold pb-12'>
-            Know more about us.
-          </h4>
-          <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-16 xl:gap-x-32 lg:gap-x-16 mt-16'>
+          <h2 className='text-center pb-12'>Know more about us.</h2>
+          <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-16 mt-10'>
             {loading
               ? Array.from({ length: 3 }).map((_, index) => (
                   <AboutSkeleton key={index} />
@@ -52,10 +50,10 @@ const Aboutus = () => {
               : about.map((item, i) => (
                   <div
                     key={i}
-                    className='hover:bg-darkmode bg-white rounded-3xl p-8 shadow-xl group mb-28'>
-                    <h4 className='text-4xl font-semibold  text-black group-hover:text-white mb-5'>
+                    className='hover:bg-darkmode bg-white rounded-3xl p-8 shadow-xl group'>
+                    <h5 className='group-hover:text-white mb-5'>
                       {item.heading}
-                    </h4>
+                    </h5>
                     <Image
                       src={item.imgSrc}
                       alt={item.imgSrc}
@@ -63,9 +61,9 @@ const Aboutus = () => {
                       height={100}
                       className='mb-5'
                     />
-                    <h4 className='text-lg font-normal text-black group-hover:text-white mb-5'>
+                    <p className='text-lg font-normal text-black group-hover:text-white mb-5'>
                       {item.paragraph}
-                    </h4>
+                    </p>
                     <Link
                       href='#'
                       className='text-18 font-semibold text-primary hover-underline flex items-center'>

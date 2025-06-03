@@ -4,16 +4,14 @@ import Link from 'next/link'
 
 const Join = () => {
   return (
-    <section className='overflow-hidden dark:bg-darkmode bg-joinus'>
-      <div className='container mx-auto max-w-(--breakpoint-xl) px-4'>
+    <section className='overflow-hidden bg-joinus'>
+      <div className='container mx-auto max-w-7xl px-4'>
         <div className='text-center'>
-          <h3 className='text-blue text-lg font-normal tracking-widest uppercase'>
+          <p className='text-primary text-lg font-normal tracking-widest uppercase'>
             Join us
-          </h3>
-          <h2 className='text-6xl font-bold my-6'>
-            Take your business to the new level.
-          </h2>
-          <p className='text-black/50 text-base font-normal'>
+          </p>
+          <h2 className='my-6'>Take your business to the new level.</h2>
+          <p className='text-black/50 text-base font-normal max-w-3xl mx-auto'>
             Craven omni memoria patriae zombieland clairvius narcisse religionis
             sunt diri undead historiarum. Golums, zombies unrelenting et Raimi
             fascinati beheading.

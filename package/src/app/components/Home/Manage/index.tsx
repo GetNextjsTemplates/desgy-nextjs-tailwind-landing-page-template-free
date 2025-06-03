@@ -46,41 +46,43 @@ const Manage = () => {
 
   return (
     <section id='services-section'>
-      <div className='container mx-auto max-w-(--breakpoint-xl) px-4'>
-        <h3 className='text-center text-6xl font-black xl:mx-24 lg:mx-24 md:mx-24'>
+      <div className='container mx-auto max-w-7xl px-4'>
+        <h2 className='text-center '>
           Manage All Your Social Media Profiles From One Place.
-        </h3>
-
-        <div className='md:flex md:justify-around mt-20'>
-          <div className='flex gap-5 justify-center md:justify-start'>
-            <Image
-              src='/images/manage/right.svg'
-              alt='right-icon'
-              width={21}
-              height={14}
-            />
-            <h4 className='text-18 font-semibold'>Free 15-day trial</h4>
-          </div>
-          <div className='flex gap-5 justify-center md:justify-start'>
-            <Image
-              src='/images/manage/right.svg'
-              alt='right-icon'
-              width={21}
-              height={14}
-            />
-            <h4 className='text-18 font-semibold'>Unlimited Team Members</h4>
-          </div>
-          <div className='flex gap-5 justify-center md:justify-start'>
-            <Image
-              src='/images/manage/right.svg'
-              alt='right-icon'
-              width={21}
-              height={14}
-            />
-            <h4 className='text-18 font-semibold'>Cancel Anytime</h4>
+        </h2>
+        {/*  */}
+        <div className='flex sm:block'>
+          <div className='flex flex-col sm:flex-row gap-5 md:justify-evenly mt-20 items-start mx-auto'>
+            <div className='flex gap-5 items-center justify-center md:justify-start'>
+              <Image
+                src='/images/manage/right.svg'
+                alt='right-icon'
+                width={21}
+                height={14}
+              />
+              <p className='text-lg font-semibold'>Free 15-day trial</p>
+            </div>
+            <div className='flex gap-5 items-center justify-center md:justify-start'>
+              <Image
+                src='/images/manage/right.svg'
+                alt='right-icon'
+                width={21}
+                height={14}
+              />
+              <p className='text-lg font-semibold'>Unlimited Team Members</p>
+            </div>
+            <div className='flex gap-5 items-center justify-center md:justify-start'>
+              <Image
+                src='/images/manage/right.svg'
+                alt='right-icon'
+                width={21}
+                height={14}
+              />
+              <p className='text-lg font-semibold'>Cancel Anytime</p>
+            </div>
           </div>
         </div>
-
+        {/*  */}
         <div className='mt-6 relative'>
           <div className='dance-text xl:-ml-80 lg:-ml-80 md:-ml-80 -ml-52  text-center -rotate-[10deg] mb-5'>
             get 3 months free
@@ -92,8 +94,8 @@ const Manage = () => {
             height={24}
             className='absolute left-[37%] top-8'
           />
-          <div className='flex justify-center'>
-            <h3 className='text-14 font-medium mr-5'>Billed Yearly</h3>
+          <div className='flex items-center justify-center'>
+            <p className='text-sm font-medium mr-5'>Billed Yearly</p>
             <Switch
               checked={enabled}
               onChange={toggleEnabled}
@@ -105,7 +107,7 @@ const Manage = () => {
                 }`}
               />
             </Switch>
-            <h3 className='text-14 font-medium ml-5'>Billed Monthly</h3>
+            <p className='text-sm font-medium ml-5'>Billed Monthly</p>
           </div>
         </div>
 
@@ -114,27 +116,23 @@ const Manage = () => {
             ? Array.from({ length: 3 }).map((_, i) => <PlansSkeleton key={i} />)
             : filteredData.map((items, i) => (
                 <div
-                  className='shadow-manage-shadow border border-border text-center p-10'
+                  className='shadow-manage-shadow border border-border text-center p-10 rounded-3xl'
                   key={i}>
-                  <h4 className='text-2xl font-bold mb-3'>{items.heading}</h4>
-                  <h2 className='text-6xl font-extrabold mb-3'>
-                    ${items.price}
-                  </h2>
-                  <p className='text-14 font-medium text-darkgrey mb-6'>
-                    {items.user}
-                  </p>
+                  <h5 className='mb-3'>{items.heading}</h5>
+                  <p className='text-6xl font-extrabold mb-3'>${items.price}</p>
+                  <p className='text-sm font-medium mb-6'>{items.user}</p>
                   <Link href={'#'}>
-                    <button className='text-14 font-bold text-primary bg-transparent hover:bg-primary hover:text-white border-2 border-primary rounded-full py-4 px-12 mb-6 hover:cursor-pointer'>
+                    <button className='text-sm font-bold text-primary bg-transparent hover:bg-primary hover:text-white border-2 border-primary rounded-full py-4 px-12 mb-6 hover:cursor-pointer'>
                       Start My 15-day Trial
                     </button>
                   </Link>
                   {/* Map through the features object and render each key-value pair dynamically */}
                   {Object.entries(items.features).map((value: any, index) => (
-                    <h3
+                    <p
                       className='text-sm font-medium text-darkgrey mb-3'
                       key={index}>
                       {value}
-                    </h3>
+                    </p>
                   ))}
                 </div>
               ))}

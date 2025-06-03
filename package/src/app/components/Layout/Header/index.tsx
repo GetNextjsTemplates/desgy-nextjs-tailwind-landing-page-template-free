@@ -85,13 +85,13 @@ const Header: React.FC = () => {
 
   return (
     <header
-      className={`fixed top-0 z-40 w-full transition-all duration-300 border-b border-black/60 ${
+      className={`fixed top-0 z-40 w-full transition-all duration-300 border-b border-black/10 ${
         sticky ? ' shadow-lg bg-white' : 'shadow-none'
       }`}>
       <div className='lg:py-0 py-2'>
         <div className='container mx-auto max-w-(--breakpoint-xl) flex items-center justify-between px-4'>
           <div
-            className={`pr-16 lg:border-r border-black/60 duration-300 ${
+            className={`pr-16 lg:border-r border-black/10 duration-300 ${
               sticky ? 'py-3' : 'py-7'
             }`}>
             <Logo />
@@ -102,7 +102,7 @@ const Header: React.FC = () => {
             ))}
           </nav>
           <div
-            className={`flex items-center gap-4 pl-16 lg:border-l border-black/60 duration-300 ${
+            className={`flex items-center gap-4 pl-16 lg:border-l border-black/10 duration-300 ${
               sticky ? 'py-3' : 'py-7'
             }`}>
             <button

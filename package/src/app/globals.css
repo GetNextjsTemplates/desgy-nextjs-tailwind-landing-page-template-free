@@ -44,7 +44,7 @@
   --color-deep-slate: #02398a;
 
   --text-80: 5rem;
-  --text-80--line-height: 1.4;
+  --text-65: 4.063rem;
 
   --blur-220: 220px;
   --blur-400: 400px;
@@ -68,15 +68,39 @@
   ::file-selector-button {
     border-color: var(--color-gray-200, currentcolor);
   }
+
+  section {
+    @apply py-20;
+  }
+
+  h1 {
+    @apply text-black text-6xl sm:text-80 font-bold sm:leading-24 leading-20;
+  }
+
+  h2 {
+    @apply text-black text-5xl lg:text-65 font-bold;
+  }
+
+  h3 {
+    @apply text-black text-4xl lg:text-6xl font-semibold;
+  }
+
+  h4 {
+    @apply text-black text-3xl lg:text-4xl font-semibold;
+  }
+
+  h5 {
+    @apply text-black text-2xl font-semibold;
+  }
+
+  h6 {
+    @apply text-black text-xl;
+  }
 }
 
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
-}
-
-section {
-  @apply py-16;
 }
 
 .bg-joinus {

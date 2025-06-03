@@ -45,7 +45,7 @@ function SamplePrevArrow(props: { className: any; style: any; onClick: any }) {
   )
 }
 const settings = {
-  dots: false,
+  dots: true,
   infinite: true,
   slidesToShow: 2,
   slidesToScroll: 1,
@@ -74,7 +74,6 @@ const settings = {
         slidesToShow: 1,
         slidesToScroll: 1,
         infinite: true,
-        dots: false,
       },
     },
   ],
@@ -103,17 +102,9 @@ const Featured = () => {
 
   return (
     <section className="relative bg-deepSlate dark:bg-darkmode  after:absolute after:w-1/4 after:h-1/4 after:bg-[url('/images/wework/vector.svg')]  after:top-72 after:right-0 after:bg-no-repeat">
-      <div className='container mx-auto max-w-(--breakpoint-xl) px-4 relative'>
+      <div className='container mx-auto max-w-7xl px-4 relative'>
         <div className='text-center overflow-hidden'>
-          <h3 className='text-4xl sm:text-6xl font-bold text-black my-2'>
-            Featured works.
-          </h3>
-          <h3 className='text-4xl sm:text-6xl font-bold text-black/50 lg:mr-48 my-2'>
-            Featured works.
-          </h3>
-          <h3 className='text-4xl sm:text-6xl font-bold text-black/25 lg:-mr-32 my-2 '>
-            Featured works.
-          </h3>
+          <h3 className='my-5'>Featured works.</h3>
         </div>
 
         <Slider {...settings}>
@@ -131,8 +122,8 @@ const Featured = () => {
                       height={620}
                       className='rounded-2xl'
                     />
-                    <div className='w-345'>
-                      <h4 className='text-xl sm:text-5xl max-w-sm font-bold text-center sm:text-start mt-12 text-black'>
+                    <div>
+                      <h4 className='max-w-sm font-bold text-center sm:text-start my-6 text-black'>
                         {items.heading}
                       </h4>
                     </div>

@@ -204,7 +204,7 @@ const ArticlesData: articles[] = [
     heading: 'We Launch Delia',
     heading2: 'Webflow this Week!',
     name: 'Published on Startupon',
-    date: 'August 19, 2021',
+    date: 'february 19, 2025',
     imgSrc: '/images/articles/article.png',
   },
   {
@@ -212,7 +212,7 @@ const ArticlesData: articles[] = [
     heading: 'We Launch Delia',
     heading2: 'Webflow this Week!',
     name: 'Published on Startupon',
-    date: 'August 19, 2021',
+    date: 'february 19, 2025',
     imgSrc: '/images/articles/article2.png',
   },
   {
@@ -220,7 +220,7 @@ const ArticlesData: articles[] = [
     heading: 'We Launch Delia',
     heading2: 'Webflow this Week!',
     name: 'Published on Startupon',
-    date: 'August 19, 2021',
+    date: 'february 19, 2025',
     imgSrc: '/images/articles/article3.png',
   },
   {
@@ -228,7 +228,7 @@ const ArticlesData: articles[] = [
     heading: 'We Launch Delia',
     heading2: 'Webflow this Week!',
     name: 'Published on Startupon',
-    date: 'August 19, 2021',
+    date: 'february 19, 2025',
     imgSrc: '/images/articles/article.png',
   },
   {
@@ -236,7 +236,7 @@ const ArticlesData: articles[] = [
     heading: 'We Launch Delia',
     heading2: 'Webflow this Week!',
     name: 'Published on Startupon',
-    date: 'August 19, 2021',
+    date: 'february 19, 2025',
     imgSrc: '/images/articles/article2.png',
   },
   {
@@ -244,7 +244,7 @@ const ArticlesData: articles[] = [
     heading: 'We Launch Delia',
     heading2: 'Webflow this Week!',
     name: 'Published on Startupon',
-    date: 'August 19, 2021',
+    date: 'february 19, 2025',
     imgSrc: '/images/articles/article3.png',
   },
 ]
@@ -252,24 +252,37 @@ const ArticlesData: articles[] = [
 // footer links data
 const FooterLinksData: footerlinks[] = [
   {
-    id: 1,
     section: 'Menu',
-    link: ['Home', 'Popular', 'About', 'Contact'],
+    links: [
+      { label: 'About Us', href: '#About' },
+      { label: 'Team', href: '#Team' },
+      { label: 'FAQ', href: '#FAQ' },
+      { label: 'Blog', href: '#Blog' },
+    ],
   },
   {
-    id: 2,
     section: 'Category',
-    link: ['Design', 'Mockup', 'View all', 'Log In'],
+    links: [
+      { label: 'Design', href: '/' },
+      { label: 'Mockup', href: '/' },
+      { label: 'View all', href: '/' },
+      { label: 'Log In', href: '/' },
+    ],
   },
   {
-    id: 3,
     section: 'Pages',
-    link: ['404', 'Instructions', 'License'],
+    links: [
+      { label: '404', href: '/' },
+      { label: 'Instructions', href: '/' },
+      { label: 'License', href: '/' },
+    ],
   },
   {
-    id: 4,
     section: 'Others',
-    link: ['Styleguide', 'Changelog'],
+    links: [
+      { label: 'Styleguide', href: '/' },
+      { label: 'Changelog', href: '/' },
+    ],
   },
 ]
 
