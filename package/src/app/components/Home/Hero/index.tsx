@@ -1,53 +1,47 @@
-import Image from 'next/image'
+'use client'
 import Link from 'next/link'
+import Image from 'next/image'
+import { motion } from 'framer-motion'
+import { Icon } from '@iconify/react/dist/iconify.js'
 
 const Hero = () => {
+  const leftAnimation = {
+    initial: { x: '-100%', opacity: 0 },
+    animate: { x: 0, opacity: 1 },
+    exit: { x: '-100%', opacity: 0 },
+    transition: { duration: 0.6 },
+  }
+
+  const rightAnimation = {
+    initial: { x: '100%', opacity: 0 },
+    animate: { x: 0, opacity: 1 },
+    exit: { x: '100%', opacity: 0 },
+    transition: { duration: 0.6 },
+  }
+
   return (
-    <section>
-      <div className='container lg:pt-36 md:pt-32 pt-24'>
-        <div className='relative'>
-          <div className='flex flex-col gap-5'>
-            <h1 className='lg:mx-auto lg:max-w-[70%] text-center text-navyblue'>
-              Creative Solutions for Modern Brands.
-            </h1>
-            <p className='lg:mx-auto lg:max-w-[70%] text-center text-bluegray text-lg md:leading-8 leading-7'>
-              At Dsign Agency, we blend design, strategy, and technology to
-              craft digital experiences that captivate, convert, and scale your
-              business.
-            </p>
-            <div className='flex items-center justify-center gap-5'>
-              <Link href={'/#portfolio'}>
-                <button
-                  type='button'
-                  className='font-medium text-white bg-primary hover:text-primary hover:bg-lightblue py-3 px-9 leafbutton transition duration-300 ease-in-out hover:cursor-pointer'>
-                  See our portfolio
-                </button>
-              </Link>
-              <Link href={'/#service'}>
-                <button
-                  type='button'
-                  className='font-medium text-primary bg-lightblue hover:text-white hover:bg-primary py-3 px-9  leafbutton transition duration-300 ease-in-out hover:cursor-pointer'>
-                  More info
-                </button>
-              </Link>
+    <section className='relative overflow-hidden z-1'>
+      <div className='container mx-auto pt-24 max-w-7xl px-4'>
+        <div className='grid grid-cols-12 justify-center items-center'>
+          <div className='col-span-12 xl:col-span-5 lg:col-span-6 md:col-span-12 sm:col-span-12'>
+            <div className='py-2 px-5 bg-primary/15 rounded-full w-fit'>
+              <p className='text-primary text-lg font-bold'>DESIGN AGENCY</p>
             </div>
+            <h1>
+              Dedicated to bring your ideas to life.
+            </h1>
+            <Link href={'#'}>
+              <button className='bg-primary text-white text-xl font-semibold py-5 px-12 rounded-full hover:bg-darkmode hover:cursor-pointer mt-10'>
+                Get started
+              </button>
+            </Link>
           </div>
-          {/* image */}
-          <div className='pt-20'>
+          <div className='xl:col-span-7 lg:col-span-6 lg:block hidden'>
             <Image
-              src={'/images/banner/HeroDashboardU.webp'}
-              alt='banner-image'
-              width={1200}
-              height={598}
-              className='w-full'
-            />
-          </div>
-          <div className='hidden md:block absolute -top-28 left-20'>
-            <Image
-              src={'/images/banner/bg-shape.svg'}
-              alt='banner-image'
-              width={1100}
-              height={598}
+              src='/images/hero/banner-image.png'
+              alt='banner image'
+              width={600}
+              height={600}
               className='w-full'
             />
           </div>

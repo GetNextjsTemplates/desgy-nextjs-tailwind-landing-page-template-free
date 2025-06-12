@@ -1,176 +1,300 @@
 import { NextResponse } from 'next/server'
 
 import { HeaderItem } from '@/app/types/menu'
-import { RecordType } from '@/app/types/record'
-import { ServiceType } from '@/app/types/service'
-import { AboutType } from '@/app/types/about'
-import { NetworkType } from '@/app/types/network'
-import { FooterLinkType } from '@/app/types/footer'
+import { aboutdata } from '@/app/types/aboutdata'
+import { workdata } from '@/app/types/workdata'
+import { featureddata } from '@/app/types/featureddata'
+import { testimonials } from '@/app/types/testimonials'
+import { articles } from '@/app/types/articles'
+import { footerlinks } from '@/app/types/footerlinks'
 
-const HeaderData: HeaderItem[] = [
-  { label: 'Service', href: '/#service' },
-  { label: 'About', href: '/#about' },
-  { label: 'Network', href: '/#network' },
-  { label: 'Contact Us', href: '/#contact' },
+// header nav-links data
+const headerData: HeaderItem[] = [
+  { label: 'About Us', href: '#About' },
+  { label: 'Team', href: '#Team' },
+  { label: 'FAQ', href: '#FAQ' },
+  { label: 'Blog', href: '#Blog' },
+  { label: 'Docs', href: '/documentation' },
 ]
 
-const CompanyData: { imgSrc: string }[] = [
+// about data
+const Aboutdata: aboutdata[] = [
   {
-    imgSrc: '/images/carousel/google.svg',
+    heading: 'About us.',
+    imgSrc: '/images/aboutus/imgOne.svg',
+    paragraph:
+      'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem',
+    link: 'Learn more',
   },
   {
-    imgSrc: '/images/carousel/garnier.png',
+    heading: 'Services.',
+    imgSrc: '/images/aboutus/imgTwo.svg',
+    paragraph:
+      'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem',
+    link: 'Learn more',
   },
   {
-    imgSrc: '/images/carousel/slack.png',
-  },
-  {
-    imgSrc: '/images/carousel/udemy.png',
-  },
-  {
-    imgSrc: '/images/carousel/google.svg',
-  },
-  {
-    imgSrc: '/images/carousel/garnier.png',
-  },
-  {
-    imgSrc: '/images/carousel/slack.png',
-  },
-  {
-    imgSrc: '/images/carousel/udemy.png',
-  },
-]
-
-const RecordData: RecordType[] = [
-  {
-    imgSrc: '/images/buyers/ourbuyers.svg',
-    percent: '80k',
-    heading: 'Our Buyers',
-    subheading:
-      'Trusted by 80,000+ global users across marketing, design, and tech.',
-  },
-  {
-    imgSrc: '/images/buyers/projectcompleted.svg',
-    percent: '90k',
-    heading: 'Projects Completed',
-    subheading:
-      'Delivered high-impact digital solutions for startups and enterprises.',
-  },
-  {
-    imgSrc: '/images/buyers/happybuyers.svg',
-    percent: '80%',
-    heading: 'Happy Clients',
-    subheading:
-      'Client satisfaction rate with consistent project delivery and results.',
-  },
-  {
-    imgSrc: '/images/buyers/teammembers.svg',
-    percent: '50+',
-    heading: 'Team Members',
-    subheading:
-      'Creative thinkers, ethical hackers, and design experts working together.',
+    heading: 'Our Works.',
+    imgSrc: '/images/aboutus/imgThree.svg',
+    paragraph:
+      'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem',
+    link: 'Learn more',
   },
 ]
 
-const ServiceData: ServiceType[] = [
+// work-data
+const WorkData: workdata[] = [
   {
-    imgSrc: '/images/provide/marketing.svg',
-    country: 'Marketing',
-    paragraph:
-      'Reach the right audience with performance-based digital marketing strategies.',
+    profession: 'Co-founder',
+    name: 'John Doe',
+    imgSrc: '/images/wework/avatar.svg',
   },
   {
-    imgSrc: '/images/provide/graphic.svg',
-    country: 'Graphic Design',
-    paragraph:
-      'Create memorable visuals that strengthen your brand and message.',
+    profession: 'Co-founder',
+    name: 'John Doe',
+    imgSrc: '/images/wework/avatar3.svg',
   },
   {
-    imgSrc: '/images/provide/heaking.svg',
-    country: 'Hacking',
-    paragraph:
-      'Secure your website and apps with professional ethical hacking services.',
+    profession: 'Co-founder',
+    name: 'John Doe',
+    imgSrc: '/images/wework/avatar4.svg',
   },
   {
-    imgSrc: '/images/provide/uidesign.svg',
-    country: 'UI/UX Design',
-    paragraph:
-      'Design clean, intuitive interfaces for a smooth user experience.',
-  },
-]
-
-const AboutData: AboutType[] = [
-  {
-    heading: 'Quality',
-    subheading:
-      'We deliver high-impact solutions with attention to detail and design precision.',
+    profession: 'Co-founder',
+    name: 'John Doe',
+    imgSrc: '/images/wework/avatar.svg',
   },
   {
-    heading: 'Communication',
-    subheading:
-      'We keep you in the loop with clear updates and responsive collaboration.',
+    profession: 'Co-founder',
+    name: 'John Doe',
+    imgSrc: '/images/wework/avatar3.svg',
   },
   {
-    heading: 'Reliability',
-    subheading:
-      'Count on us to meet deadlines and exceed expectations every time.',
+    profession: 'Co-founder',
+    name: 'John Doe',
+    imgSrc: '/images/wework/avatar4.svg',
   },
 ]
 
-const NetworkData: NetworkType[] = [
+// featured data
+const FeaturedData: featureddata[] = [
   {
-    imgSrc: '/images/network/bangladesh.svg',
-    country: 'Bangladesh',
-    paragraph:
-      'Collaborating with top creatives and developers across Dhaka and beyond.',
+    heading: 'Brand design for a computer brand.',
+    imgSrc: '/images/featured/feat1.jpg',
   },
   {
-    imgSrc: '/images/network/america.svg',
-    country: 'United States',
-    paragraph:
-      'Driving innovation with partners and startups in major U.S. tech hubs.',
+    heading: 'Mobile app 3d wallpaper.',
+    imgSrc: '/images/featured/feat2.jpg',
   },
   {
-    imgSrc: '/images/network/australia.svg',
-    country: 'Australia',
-    paragraph:
-      'Supporting businesses in Sydney and Melbourne with tailored digital solutions.',
+    heading: 'Brand design for a computer brand.',
+    imgSrc: '/images/featured/feat1.jpg',
   },
   {
-    imgSrc: '/images/network/china.svg',
-    country: 'China',
-    paragraph:
-      'Delivering secure and scalable services across the Chinese digital market.',
+    heading: 'Mobile app 3d wallpaper.',
+    imgSrc: '/images/featured/feat2.jpg',
   },
 ]
 
-const FooterLinkData: FooterLinkType[] = [
+// plans data
+const PlansData = [
   {
+    heading: 'Startup',
+    price: {
+      monthly: 19,
+      yearly: 190,
+    },
+    user: 'per user',
+    features: {
+      profiles: '5 Social Profiles',
+      posts: '5 Scheduled Posts Per Profile',
+      templates: '400+ Templated',
+      view: 'Calendar View',
+      support: '24/7 Support',
+    },
+  },
+  {
+    heading: 'Business',
+    price: {
+      monthly: 29,
+      yearly: 290,
+    },
+    user: 'per user',
+    features: {
+      profiles: '10 Social Profiles',
+      posts: '5 Scheduled Posts Per Profile',
+      templates: '600+ Templated',
+      view: 'Calendar View',
+      support: '24/7 VIP Support',
+    },
+  },
+  {
+    heading: 'Agency',
+    price: {
+      monthly: 59,
+      yearly: 590,
+    },
+    user: 'per user',
+    features: {
+      profiles: '100 Social Profiles',
+      posts: '100 Scheduled Posts Per Profile',
+      templates: '800+ Templated',
+      view: 'Calendar View',
+      support: '24/7 VIP Support',
+    },
+  },
+]
+
+// testimonial data
+const TestimonialsData: testimonials[] = [
+  {
+    name: 'Robert Fox',
+    profession: 'CEO, Parkview Int.Ltd',
+    comment:
+      'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
+    imgSrc: '/images/testimonial/user1.svg',
+    rating: 5,
+  },
+  {
+    name: 'Leslie Alexander',
+    profession: 'CEO, Parkview Int.Ltd',
+    comment:
+      'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
+    imgSrc: '/images/testimonial/user2.svg',
+    rating: 4,
+  },
+  {
+    name: 'Cody Fisher',
+    profession: 'CEO, Parkview Int.Ltd',
+    comment:
+      'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
+    imgSrc: '/images/testimonial/user3.svg',
+    rating: 4,
+  },
+  {
+    name: 'Robert Fox',
+    profession: 'CEO, Parkview Int.Ltd',
+    comment:
+      'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
+    imgSrc: '/images/testimonial/user1.svg',
+    rating: 4,
+  },
+  {
+    name: 'Leslie Alexander',
+    profession: 'CEO, Parkview Int.Ltd',
+    comment:
+      'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
+    imgSrc: '/images/testimonial/user2.svg',
+    rating: 4,
+  },
+  {
+    name: 'Cody Fisher',
+    profession: 'CEO, Parkview Int.Ltd',
+    comment:
+      'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
+    imgSrc: '/images/testimonial/user3.svg',
+    rating: 4,
+  },
+]
+
+// artical data
+const ArticlesData: articles[] = [
+  {
+    time: '5 min',
+    heading: 'We Launch Delia',
+    heading2: 'Webflow this Week!',
+    name: 'Published on Startupon',
+    date: 'february 19, 2025',
+    imgSrc: '/images/articles/article.png',
+  },
+  {
+    time: '5 min',
+    heading: 'We Launch Delia',
+    heading2: 'Webflow this Week!',
+    name: 'Published on Startupon',
+    date: 'february 19, 2025',
+    imgSrc: '/images/articles/article2.png',
+  },
+  {
+    time: '5 min',
+    heading: 'We Launch Delia',
+    heading2: 'Webflow this Week!',
+    name: 'Published on Startupon',
+    date: 'february 19, 2025',
+    imgSrc: '/images/articles/article3.png',
+  },
+  {
+    time: '5 min',
+    heading: 'We Launch Delia',
+    heading2: 'Webflow this Week!',
+    name: 'Published on Startupon',
+    date: 'february 19, 2025',
+    imgSrc: '/images/articles/article.png',
+  },
+  {
+    time: '5 min',
+    heading: 'We Launch Delia',
+    heading2: 'Webflow this Week!',
+    name: 'Published on Startupon',
+    date: 'february 19, 2025',
+    imgSrc: '/images/articles/article2.png',
+  },
+  {
+    time: '5 min',
+    heading: 'We Launch Delia',
+    heading2: 'Webflow this Week!',
+    name: 'Published on Startupon',
+    date: 'february 19, 2025',
+    imgSrc: '/images/articles/article3.png',
+  },
+]
+
+// footer links data
+const FooterLinksData: footerlinks[] = [
+  {
+    section: 'Menu',
     links: [
-      { label: 'Service', href: '/#service' },
-      { label: 'About', href: '/#about' },
-      { label: 'Network', href: '/#network' },
-      { label: 'Contact Us', href: '/#contact' },
+      { label: 'About Us', href: '#About' },
+      { label: 'Team', href: '#Team' },
+      { label: 'FAQ', href: '#FAQ' },
+      { label: 'Blog', href: '#Blog' },
     ],
   },
   {
+    section: 'Category',
     links: [
-      { label: 'Help', href: '/' },
-      { label: 'Resources', href: '/' },
-      { label: 'Application', href: '/' },
-      { label: 'Team', href: '/' },
+      { label: 'Design', href: '/' },
+      { label: 'Mockup', href: '/' },
+      { label: 'View all', href: '/' },
+      { label: 'Log In', href: '/' },
+    ],
+  },
+  {
+    section: 'Pages',
+    links: [
+      { label: '404', href: '/' },
+      { label: 'Instructions', href: '/' },
+      { label: 'License', href: '/' },
+    ],
+  },
+  {
+    section: 'Others',
+    links: [
+      { label: 'Styleguide', href: '/' },
+      { label: 'Changelog', href: '/' },
     ],
   },
 ]
 
 export const GET = () => {
   return NextResponse.json({
-    HeaderData,
-    CompanyData,
-    RecordData,
-    ServiceData,
-    AboutData,
-    NetworkData,
-    FooterLinkData,
+    headerData,
+    Aboutdata,
+    WorkData,
+    FeaturedData,
+    PlansData,
+    TestimonialsData,
+    ArticlesData,
+    FooterLinksData,
   })
 }
